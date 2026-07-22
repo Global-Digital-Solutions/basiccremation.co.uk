@@ -29,7 +29,7 @@ Copy `.env.example` to `.env.local` and fill in.
 | `RESEND_API_KEY` | Callback form | Free tier: 3,000 emails/month at [resend.com](https://resend.com) |
 | `CALLBACK_EMAIL_TO` | Callback form | Where form submissions are emailed |
 | `NEXT_PUBLIC_SITE_URL` | Sitemap, OpenGraph | Default: `https://basiccremation.co.uk` |
-| `NEXT_PUBLIC_PHONE` | Phone CTAs | Default: `0333 242 1405` |
+| `NEXT_PUBLIC_PHONE` | Phone CTAs | Default: `0330 1333462` |
 
 None are strictly required for the build to succeed — defaults will be used.
 
