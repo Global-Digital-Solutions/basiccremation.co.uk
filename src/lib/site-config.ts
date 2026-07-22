@@ -2,8 +2,8 @@ export const siteConfig = {
   name: "Basic Cremation",
   domain: "basiccremation.co.uk",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://basiccremation.co.uk",
-  phone: process.env.NEXT_PUBLIC_PHONE || "0333 242 1405",
-  phoneTel: (process.env.NEXT_PUBLIC_PHONE || "0333 242 1405").replace(/\s/g, ""),
+  phone: process.env.NEXT_PUBLIC_PHONE || "0330 1333462",
+  phoneTel: (process.env.NEXT_PUBLIC_PHONE || "0330 1333462").replace(/\s/g, ""),
   description:
     "Information and arrangement help for families needing a basic cremation in England, Scotland and Wales. Available 24 hours a day.",
   basePrice: 1499,
