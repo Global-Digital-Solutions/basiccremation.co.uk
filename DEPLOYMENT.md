@@ -78,7 +78,7 @@ In the Vercel dashboard for this project:
 
 | Name | Value | Notes |
 |---|---|---|
-| `NEXT_PUBLIC_PHONE` | `0333 242 1405` | The displayed phone number |
+| `NEXT_PUBLIC_PHONE` | `0330 1333462` | The displayed phone number |
 | `NEXT_PUBLIC_SITE_URL` | `https://basiccremation.co.uk` | Used for sitemap and OpenGraph |
 | `RESEND_API_KEY` | (provision later) | Add when callback form goes live in Batch 2 |
 | `CALLBACK_EMAIL_TO` | (your email) | Where form submissions go |
