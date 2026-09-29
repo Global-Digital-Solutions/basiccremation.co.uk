@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/help-and-advice" },
   title: "Help & advice when someone has died | Basic Cremation",
   description: "Practical, step-by-step guides for the days after someone has died — what to do first, registering the death, coroners, and the paperwork involved."
 };

@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/help-and-advice/registering-a-death-scotland" },
   title: "Registering a death in Scotland | Basic Cremation",
   description: "How registering a death works in Scotland — the eight-day rule, who can register, the documents the registrar issues, and how it differs from England and Wales."
 };

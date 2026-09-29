@@ -9,6 +9,7 @@ const HERO_IMAGE =
   "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2400&q=75";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faqs" },
   title: "Basic Cremation FAQs | Common questions answered",
   description: `Answers to the questions families most often ask before arranging a basic cremation — price, timing, what's included, and how it differs from a traditional funeral.`
 };

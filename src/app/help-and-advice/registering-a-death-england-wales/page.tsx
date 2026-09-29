@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/help-and-advice/registering-a-death-england-wales" },
   title: "Registering a death in England or Wales | Basic Cremation",
   description: "Step-by-step guide to registering a death in England or Wales — who registers, when, what to bring, and what documents you receive."
 };

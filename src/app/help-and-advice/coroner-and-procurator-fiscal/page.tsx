@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/help-and-advice/coroner-and-procurator-fiscal" },
   title: "When the coroner or Procurator Fiscal is involved | Basic Cremation",
   description: "What it means when a death is referred to the coroner (England, Wales, NI) or Procurator Fiscal (Scotland), how long it takes, and how it affects the cremation."
 };

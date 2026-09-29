@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/prices" },
   title: `Basic Cremation Prices | £${siteConfig.basePrice.toLocaleString()} all-inclusive`,
   description: `One simple, all-inclusive price of £${siteConfig.basePrice.toLocaleString()} for a basic cremation in England and Wales. No hidden fees, no upselling, no extras at the door.`
 };

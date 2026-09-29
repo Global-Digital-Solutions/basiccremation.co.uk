@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Use",
   description: "Terms of use for the Basic Cremation website."
 };

@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/help-and-advice/what-to-do-when-someone-dies" },
   title: "What to do when someone has died | Basic Cremation",
   description: "Step-by-step guidance for the first 24 to 72 hours after someone has died — at home, in hospital, in a care home, or unexpectedly."
 };

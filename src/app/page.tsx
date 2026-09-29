@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" }
+};
 import { PhoneCTA } from "@/components/phone-cta";
 
 // Unsplash placeholder URLs — calm, age-agnostic, no funeral iconography.

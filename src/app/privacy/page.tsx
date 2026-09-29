@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy",
   description: "How Basic Cremation handles personal information collected through this website."
 };

@@ -9,6 +9,7 @@ const HERO_IMAGE =
   "https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=2400&q=75";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact us | Basic Cremation",
   description: `Speak to a real person, 24 hours a day. Call ${siteConfig.phone} for help arranging a basic cremation in England or Wales.`
 };

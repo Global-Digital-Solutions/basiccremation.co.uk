@@ -9,6 +9,7 @@ const HERO_IMAGE =
   "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=2400&q=75";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/whats-included" },
   title: "What's included in a basic cremation | Basic Cremation",
   description: `Everything a £${siteConfig.basePrice.toLocaleString()} basic cremation includes — and what isn't included. Honest, plain-English breakdown.`
 };

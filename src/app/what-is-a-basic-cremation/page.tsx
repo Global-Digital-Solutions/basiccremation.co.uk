@@ -6,6 +6,7 @@ import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/what-is-a-basic-cremation" },
   title: "What is a basic cremation? | Basic Cremation",
   description: "A basic cremation (also called direct cremation) is a simple, unattended cremation without a service, hearse, or procession. Here's how it works and why families choose it."
 };
