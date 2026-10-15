@@ -125,8 +125,4 @@ export const worthingLocation: LocationData = {
 
   transitNote:
     "Collection from Worthing hospitals, care homes and private addresses across West Sussex typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-
-  cityImage:
-    "https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=1800&q=75",
-  cityImageAlt: "Worthing — South Coast"
 };

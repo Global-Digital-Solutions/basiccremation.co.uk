@@ -46,7 +46,7 @@ export default function WhatIsBasicCremationPage() {
           <div className="prose-content">
             <h2>How a basic cremation works</h2>
             <p>
-              Once you call us, we arrange for a local, accredited funeral director near you to
+              Once you call us, we arrange for a local, independent funeral director near you, individually registered with SAIF or NAFD, to
               collect your loved one from the place of death &mdash; usually a hospital, hospice,
               care home, or their own home. They are taken into the funeral director&rsquo;s care
               and looked after at the funeral home until the cremation.

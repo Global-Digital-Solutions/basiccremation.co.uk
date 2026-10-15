@@ -134,7 +134,4 @@ export const miltonKeynesLocation: LocationData = {
 
   transitNote:
     "Collection from Milton Keynes hospitals, care homes and private addresses across Buckinghamshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/milton-keynes.jpg",
-  cityImageAlt: "Milton Keynes — local landscape"
 };

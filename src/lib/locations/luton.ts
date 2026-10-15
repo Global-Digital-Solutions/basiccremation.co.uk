@@ -130,7 +130,4 @@ export const lutonLocation: LocationData = {
 
   transitNote:
     "Collection from Luton hospitals, care homes and private addresses across Bedfordshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/luton.jpg",
-  cityImageAlt: "Luton — local landscape"
 };

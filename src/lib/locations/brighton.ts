@@ -143,7 +143,4 @@ export const brightonLocation: LocationData = {
 
   transitNote:
     "Collection from Brighton hospitals, care homes and private addresses across East Sussex & the South Coast typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/brighton.jpg",
-  cityImageAlt: "Brighton — South Coast scene"
 };

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: leicesterLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: leicesterLocation.cityImageAlt || `Basic Cremation in ${leicesterLocation.city}`
+        alt: `Basic Cremation in ${leicesterLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: leicesterLocation.metaTitle,
     description: leicesterLocation.metaDescription,
-    images: [leicesterLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

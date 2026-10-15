@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: telfordLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: telfordLocation.cityImageAlt || `Basic Cremation in ${telfordLocation.city}`
+        alt: `Basic Cremation in ${telfordLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: telfordLocation.metaTitle,
     description: telfordLocation.metaDescription,
-    images: [telfordLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

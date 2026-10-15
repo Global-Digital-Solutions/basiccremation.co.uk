@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: huddersfieldLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: huddersfieldLocation.cityImageAlt || `Basic Cremation in ${huddersfieldLocation.city}`
+        alt: `Basic Cremation in ${huddersfieldLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: huddersfieldLocation.metaTitle,
     description: huddersfieldLocation.metaDescription,
-    images: [huddersfieldLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

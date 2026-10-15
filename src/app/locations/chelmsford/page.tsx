@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: chelmsfordLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: chelmsfordLocation.cityImageAlt || `Basic Cremation in ${chelmsfordLocation.city}`
+        alt: `Basic Cremation in ${chelmsfordLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: chelmsfordLocation.metaTitle,
     description: chelmsfordLocation.metaDescription,
-    images: [chelmsfordLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

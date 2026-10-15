@@ -4,13 +4,8 @@ import { siteConfig } from "@/lib/site-config";
 import { PhoneCTA } from "@/components/phone-cta";
 import type { LocationData } from "@/lib/location-types";
 import { getRegionalSiblings } from "@/lib/locations";
-
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=2400&q=75";
-
-// Generic fallback if a location doesn't supply its own city image — bright, peaceful, age-agnostic
-const PRICING_IMAGE_FALLBACK =
-  "https://images.unsplash.com/photo-1455156218388-5e61b526818b?auto=format&fit=crop&w=1800&q=75";
+import { LOCATION_IMAGES, locationImage, countrysideImage } from "@/lib/location-images";
+import { CommonsImage, PhotoCredit } from "@/components/commons-image";
 
 const ADVICE_IMAGE = "/images/local-support.jpg";
 
@@ -18,9 +13,6 @@ const ADVICE_IMAGE = "/images/local-support.jpg";
 const CREMATORIA_BG =
   "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=2400&q=75";
 
-// Background image for the Useful Guides section — bright English countryside
-const USEFUL_GUIDES_BG =
-  "https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=2400&q=75";
 
 interface LocationPageProps {
   data: LocationData;
@@ -34,21 +26,25 @@ export function LocationPage({ data }: LocationPageProps) {
 
   const coronerLink = "/help-and-advice/coroner-and-procurator-fiscal";
 
-  // Pricing image: prefer the city-specific image, fall back to generic
-  const pricingImage = data.cityImage || PRICING_IMAGE_FALLBACK;
-  const pricingImageAlt =
-    data.cityImageAlt ||
-    `A bright sunlit garden — celebration of life ${data.city}`;
+  // Photos of this place (Wikimedia Commons). Hero gets the first; the pricing
+  // panel gets a second photo of the same place, or generic countryside.
+  const heroImage = locationImage(data.slug, 0);
+  const pricingImage =
+    (LOCATION_IMAGES[data.slug]?.length ?? 0) > 1
+      ? locationImage(data.slug, 1)
+      : countrysideImage(1);
+  const guidesImage = countrysideImage(2);
 
   return (
     <>
       {/* HERO */}
       <section className="relative bg-hero-fallback">
         <div className="absolute inset-0 z-0">
-          <Image src={HERO_IMAGE} alt="" fill sizes="100vw" priority className="object-cover" />
+          <CommonsImage image={heroImage} priority />
           <div className="absolute inset-0 scrim-down-dark"></div>
           <div className="absolute inset-0 scrim-left-light md:bg-gradient-to-r md:from-paper/90 md:via-paper/60 md:to-transparent"></div>
         </div>
+        <PhotoCredit image={heroImage} className="absolute bottom-2 right-3 z-10 text-ink-500" />
 
         <div className="relative z-10 container-page py-16 md:py-24 lg:py-28">
           <div className="max-w-2xl">
@@ -71,22 +67,12 @@ export function LocationPage({ data }: LocationPageProps) {
             <p className="text-sm text-ink-500 font-medium uppercase tracking-wider md:flex-shrink-0">
               Trusted across the UK
             </p>
-            <div className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-8">
-              <div className="flex items-center gap-2.5">
-                <div className="flex gap-0.5" aria-label="5 star rating">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <svg key={i} className="w-4 h-4 text-coral-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
-                      <path d="M10 1l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 14.5l-5.2 2.7 1-5.9L1.5 7.2l5.9-.9z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm text-ink-700"><span className="font-semibold">Reviews</span> on Trustpilot</span>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:flex md:items-center gap-3 md:gap-8">
               <div className="flex items-center gap-2.5 text-sm text-ink-700">
                 <svg className="w-4 h-4 text-cta" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.6 4a8 8 0 11-16 0 8 8 0 0116 0z" />
                 </svg>
-                <span><span className="font-semibold">NAFD &amp; SAIF</span> accredited network</span>
+                <span><span className="font-semibold">SAIF &amp; NAFD</span> registered funeral directors</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-ink-700">
                 <svg className="w-4 h-4 text-cta" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden>
@@ -166,17 +152,15 @@ export function LocationPage({ data }: LocationPageProps) {
         </div>
       </section>
 
-      {/* PRICING — uses cityImage if provided */}
+      {/* PRICING — photo of this place */}
       <section id="pricing" className="bg-paper-warm border-y border-ink-100 scroll-mt-24">
         <div className="container-page py-14 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-card order-2 md:order-1 max-w-md mx-auto md:mx-0 md:max-w-none w-full">
-              <Image
-                src={pricingImage}
-                alt={pricingImageAlt}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+              <CommonsImage image={pricingImage} sizes="(max-width: 768px) 100vw, 50vw" />
+              <PhotoCredit
+                image={pricingImage}
+                className="absolute bottom-0 inset-x-0 bg-ink-900/55 text-white/90 px-3 py-1.5 [&_a]:text-white"
               />
             </div>
 
@@ -571,9 +555,10 @@ export function LocationPage({ data }: LocationPageProps) {
       {/* USEFUL GUIDES — cross-links into core content, image background */}
       <section className="relative scroll-mt-24 overflow-hidden border-y border-ink-100">
         <div className="absolute inset-0 z-0">
-          <Image src={USEFUL_GUIDES_BG} alt="" fill sizes="100vw" className="object-cover" />
+          <CommonsImage image={guidesImage} alt="" />
           <div className="absolute inset-0 bg-paper-warm/92"></div>
         </div>
+        <PhotoCredit image={guidesImage} className="absolute bottom-2 right-3 z-10 text-ink-500" />
         <div className="relative z-10 container-page py-14 md:py-20">
           <div className="max-w-narrow mb-10">
             <p className="text-sm uppercase tracking-[0.2em] text-cta mb-4 font-semibold">

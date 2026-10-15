@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: blackpoolLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: blackpoolLocation.cityImageAlt || `Basic Cremation in ${blackpoolLocation.city}`
+        alt: `Basic Cremation in ${blackpoolLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: blackpoolLocation.metaTitle,
     description: blackpoolLocation.metaDescription,
-    images: [blackpoolLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

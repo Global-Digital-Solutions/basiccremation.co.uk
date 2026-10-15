@@ -125,8 +125,4 @@ export const maidstoneLocation: LocationData = {
 
   transitNote:
     "Collection from Maidstone hospitals, care homes and private addresses across Kent typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-
-  cityImage:
-    "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?auto=format&fit=crop&w=1800&q=75",
-  cityImageAlt: "Maidstone — Home Counties"
 };

@@ -30,7 +30,7 @@ const FAQS: { q: string; a: string }[] = [
   { q: "What happens to the ashes?",
     a: `Ashes are returned to you in a simple urn or scatter tube — by hand at the funeral home, or by tracked courier to your home. You can scatter them, bury them, or keep them, and we&rsquo;re happy to discuss options on the phone if you&rsquo;d like ideas.` },
   { q: "Is a basic cremation respectful?",
-    a: `Yes. Your loved one is in the care of an accredited, independent funeral director throughout. They are washed, dressed if you wish, and looked after with the same dignity as in any funeral. The simplicity is in the arrangement — not the care.` },
+    a: `Yes. Your loved one is in the care of an independent funeral director throughout, individually registered with SAIF or NAFD. They are washed, dressed if you wish, and looked after with the same dignity as in any funeral. The simplicity is in the arrangement — not the care.` },
   { q: "What if a coroner is involved?",
     a: `When a coroner (or, in Scotland, a Procurator Fiscal) is involved, the timing depends on their investigation, not on us. We can still take care of everything once they release your loved one. See our <a href="/help-and-advice/coroner-and-procurator-fiscal" class="text-cta underline">coroner and Procurator Fiscal</a> guide.` },
   { q: "Can I have a memorial service later?",
@@ -42,7 +42,7 @@ const FAQS: { q: string; a: string }[] = [
   { q: "Can I pre-pay for my own basic cremation in advance?",
     a: `We don&rsquo;t currently sell pre-paid plans directly through this site. We can talk you through the options on the phone, including reputable plan providers regulated by the FCA.` },
   { q: "Who actually carries out the cremation?",
-    a: `A local, independent funeral director near you takes care of every step. They are NAFD- or SAIF-accredited and use a local crematorium. We coordinate the arrangement and the paperwork, but the hands-on care is always local.` },
+    a: `A local, independent funeral director near you takes care of every step. They are an independent business, individually registered with SAIF or NAFD in their own right, and use a local crematorium. We coordinate the arrangement and the paperwork, but the hands-on care is always local.` },
   { q: "How do I start the arrangement?",
     a: `Call us on <a href="tel:${siteConfig.phoneTel}" class="text-cta underline">${siteConfig.phone}</a>. We&rsquo;re available 24 hours a day. The first call usually takes ten to fifteen minutes — no commitment, no payment, just a clear plan for the next steps.` }
 ];

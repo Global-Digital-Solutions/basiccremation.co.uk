@@ -131,8 +131,4 @@ export const worcesterLocation: LocationData = {
 
   transitNote:
     "Collection from Worcester hospitals, care homes and private addresses across Worcestershire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-
-  cityImage:
-    "https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?auto=format&fit=crop&w=1800&q=75",
-  cityImageAlt: "Worcester — historic city"
 };

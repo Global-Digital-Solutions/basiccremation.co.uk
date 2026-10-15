@@ -137,7 +137,4 @@ export const derbyLocation: LocationData = {
 
   transitNote:
     "Collection from Derby hospitals, care homes and private addresses across Derbyshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/derby.jpg",
-  cityImageAlt: "Derby — local landscape"
 };

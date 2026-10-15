@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { allLocations } from "@/lib/locations";
 import { PhoneCTA } from "@/components/phone-cta";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 import { siteConfig } from "@/lib/site-config";
+import { countrysideImage } from "@/lib/location-images";
+import { CommonsImage, PhotoCredit } from "@/components/commons-image";
 
 export const metadata: Metadata = {
   title: "Locations We Cover | Basic Cremation Across the UK",
@@ -13,10 +14,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/locations" }
 };
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=2400&q=75";
-const LIST_BG_IMAGE =
-  "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=2400&q=75";
+// UK-wide page, so generic English countryside rather than any one city.
+const HERO_IMAGE = countrysideImage(0);
+const LIST_BG_IMAGE = countrysideImage(3);
 
 export default function LocationsIndex() {
   const sortedLocations = Object.values(allLocations).sort((a, b) =>
@@ -35,10 +35,11 @@ export default function LocationsIndex() {
       {/* HERO — image background, scrim, large heading */}
       <section className="relative bg-hero-fallback">
         <div className="absolute inset-0 z-0">
-          <Image src={HERO_IMAGE} alt="" fill sizes="100vw" priority className="object-cover" />
+          <CommonsImage image={HERO_IMAGE} alt="" priority />
           <div className="absolute inset-0 scrim-down-dark"></div>
           <div className="absolute inset-0 scrim-left-light md:bg-gradient-to-r md:from-paper/90 md:via-paper/60 md:to-transparent"></div>
         </div>
+        <PhotoCredit image={HERO_IMAGE} className="absolute bottom-2 right-3 z-10 text-ink-500" />
         <div className="relative z-10 container-page py-16 md:py-24">
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.2em] text-cta mb-5 font-semibold">
@@ -57,9 +58,10 @@ export default function LocationsIndex() {
       {/* CITIES LISTING — image background, paper-warm overlay so cards remain readable */}
       <section className="relative overflow-hidden border-y border-ink-100">
         <div className="absolute inset-0 z-0">
-          <Image src={LIST_BG_IMAGE} alt="" fill sizes="100vw" className="object-cover" />
+          <CommonsImage image={LIST_BG_IMAGE} alt="" />
           <div className="absolute inset-0 bg-gradient-to-b from-paper-warm/96 via-paper-warm/93 to-paper-warm/96"></div>
         </div>
+        <PhotoCredit image={LIST_BG_IMAGE} className="absolute bottom-2 right-3 z-10 text-ink-500" />
 
         <div className="relative z-10 container-page py-14 md:py-20">
           <div className="max-w-2xl mx-auto text-center mb-10 md:mb-12">

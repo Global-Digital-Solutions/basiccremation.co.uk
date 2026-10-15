@@ -145,7 +145,4 @@ export const coventryLocation: LocationData = {
 
   transitNote:
     "Collection from Coventry hospitals, care homes and private addresses across West Midlands typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/coventry.jpg",
-  cityImageAlt: "Coventry — local landscape"
 };

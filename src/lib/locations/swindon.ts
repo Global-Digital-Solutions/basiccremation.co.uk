@@ -129,7 +129,4 @@ export const swindonLocation: LocationData = {
 
   transitNote:
     "Collection from Swindon hospitals, care homes and private addresses across Wiltshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/swindon.jpg",
-  cityImageAlt: "Swindon — Wiltshire atmosphere"
 };

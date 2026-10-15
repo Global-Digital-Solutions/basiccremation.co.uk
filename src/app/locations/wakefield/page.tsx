@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: wakefieldLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: wakefieldLocation.cityImageAlt || `Basic Cremation in ${wakefieldLocation.city}`
+        alt: `Basic Cremation in ${wakefieldLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: wakefieldLocation.metaTitle,
     description: wakefieldLocation.metaDescription,
-    images: [wakefieldLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

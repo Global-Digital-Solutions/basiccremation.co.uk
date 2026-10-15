@@ -62,22 +62,12 @@ export default function HomePage() {
             <p className="text-sm text-ink-500 font-medium uppercase tracking-wider md:flex-shrink-0">
               Trusted across the UK
             </p>
-            <div className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-8">
-              <div className="flex items-center gap-2.5">
-                <div className="flex gap-0.5" aria-label="5 star rating">
-                  {[1,2,3,4,5].map((i) => (
-                    <svg key={i} className="w-4 h-4 text-coral-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
-                      <path d="M10 1l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 14.5l-5.2 2.7 1-5.9L1.5 7.2l5.9-.9z"/>
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm text-ink-700"><span className="font-semibold">Reviews</span> on Trustpilot</span>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:flex md:items-center gap-3 md:gap-8">
               <div className="flex items-center gap-2.5 text-sm text-ink-700">
                 <svg className="w-4 h-4 text-cta" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.6 4a8 8 0 11-16 0 8 8 0 0116 0z" />
                 </svg>
-                <span><span className="font-semibold">NAFD &amp; SAIF</span> accredited network</span>
+                <span><span className="font-semibold">SAIF &amp; NAFD</span> registered funeral directors</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-ink-700">
                 <svg className="w-4 h-4 text-cta" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden>

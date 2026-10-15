@@ -133,7 +133,4 @@ export const newportLocation: LocationData = {
 
   transitNote:
     "Collection from Newport hospitals, care homes and private addresses across Newport & South East Wales typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/newport.jpg",
-  cityImageAlt: "Newport — South Wales atmosphere"
 };

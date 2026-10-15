@@ -143,7 +143,4 @@ export const southamptonLocation: LocationData = {
 
   transitNote:
     "Collection from Southampton hospitals, care homes and private addresses across Hampshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/southampton.jpg",
-  cityImageAlt: "Southampton — South Coast atmosphere"
 };

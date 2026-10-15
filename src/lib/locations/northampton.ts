@@ -130,7 +130,4 @@ export const northamptonLocation: LocationData = {
 
   transitNote:
     "Collection from Northampton hospitals, care homes and private addresses across Northamptonshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/northampton.jpg",
-  cityImageAlt: "Northampton — local landscape"
 };

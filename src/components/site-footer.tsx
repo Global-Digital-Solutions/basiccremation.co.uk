@@ -112,6 +112,10 @@ export function SiteFooter() {
               Basic Cremation may receive consideration for connecting families with this service. This does not affect
               the prices you pay or the information presented on this site.
             </p>
+            <p className="mt-3">
+              The independent funeral directors we work with are each individually registered with SAIF or NAFD.{" "}
+              {siteConfig.name} itself is not a member of either body.
+            </p>
           </div>
           <div>
             <p className="font-semibold text-paper/90 mb-2 uppercase tracking-wider text-[11px]">

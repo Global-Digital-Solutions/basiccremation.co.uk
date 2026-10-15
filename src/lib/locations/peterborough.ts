@@ -130,7 +130,4 @@ export const peterboroughLocation: LocationData = {
 
   transitNote:
     "Collection from Peterborough hospitals, care homes and private addresses across Cambridgeshire typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away.",
-  cityImage:
-    "/images/cities/peterborough.jpg",
-  cityImageAlt: "Peterborough — Fenland atmosphere"
 };

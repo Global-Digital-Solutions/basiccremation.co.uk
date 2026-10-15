@@ -175,7 +175,7 @@ export default function PricesPage() {
             {[
               { stat: `£${siteConfig.basePrice.toLocaleString()}`, label: "All-inclusive price" },
               { stat: "24/7", label: "Phone support" },
-              { stat: "NAFD & SAIF", label: "Accredited network" },
+              { stat: "SAIF & NAFD", label: "Registered funeral directors" },
               { stat: "0", label: "Hidden fees ever" },
               { stat: "Local", label: "Funeral directors" }
             ].map((b) => (

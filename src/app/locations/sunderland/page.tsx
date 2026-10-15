@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: sunderlandLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: sunderlandLocation.cityImageAlt || `Basic Cremation in ${sunderlandLocation.city}`
+        alt: `Basic Cremation in ${sunderlandLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: sunderlandLocation.metaTitle,
     description: sunderlandLocation.metaDescription,
-    images: [sunderlandLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 

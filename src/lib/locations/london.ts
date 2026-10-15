@@ -13,7 +13,7 @@ export const londonLocation: LocationData = {
     "A simple, dignified cremation arranged across all 32 London boroughs and the City — handled by trusted local funeral directors and London-area crematoria, never centralised hundreds of miles away.",
 
   localIntro: [
-    "If you’ve lost someone in London or anywhere across Greater London, we can help you arrange a basic cremation — also called a direct or unattended cremation. The whole process happens locally to you: an independent, accredited funeral director near you brings your loved one into care at their own funeral home, and the cremation itself takes place at one of the established London-area crematoria. Nothing is moved between cities.",
+    "If you’ve lost someone in London or anywhere across Greater London, we can help you arrange a basic cremation — also called a direct or unattended cremation. The whole process happens locally to you: an independent funeral director near you, individually registered with SAIF or NAFD, brings your loved one into care at their own funeral home, and the cremation itself takes place at one of the established London-area crematoria. Nothing is moved between cities.",
     "London is one of the best-served cremation areas in the UK. The City of London Cemetery and Crematorium at Manor Park is among Europe’s largest, while Mortlake, Putney Vale, Streatham Park, West Norwood, Hendon, Eltham, Beckenham, Garston, Ruislip, South Essex (Upminster) and Croydon all sit within easy reach. Your local funeral director arranges the cremation at the appropriate facility for the borough you’re in — Inner London, the Home Counties fringe, or anywhere in between.",
     "The price is £1,499 — a single all-inclusive figure covering everything that needs to happen. The team is available 24 hours a day, every day of the year. London bereavement involves more paperwork than most areas because each borough operates its own register office, and several London coroners cover specific clusters of boroughs — we explain the right steps for your borough on the call."
   ],
@@ -235,8 +235,4 @@ export const londonLocation: LocationData = {
 
   transitNote:
     "Collection from London hospitals, care homes and private addresses across all 32 boroughs and the City typically happens within hours of your call, day or night. The local funeral director arrives in their own vehicle and brings your loved one into care at their funeral home — never into a centralised facility hundreds of miles away. London traffic and the city’s scale are factored into the timing, but the principle is the same: local care, local crematorium, local price.",
-
-  cityImage:
-    "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1800&q=75",
-  cityImageAlt: "London — Tower Bridge skyline"
 };

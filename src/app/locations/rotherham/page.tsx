@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: rotherhamLocation.cityImage || `https://basiccremation.co.uk/og-image.png`,
+        url: `https://basiccremation.co.uk/og-image.png`,
         width: 1200,
         height: 630,
-        alt: rotherhamLocation.cityImageAlt || `Basic Cremation in ${rotherhamLocation.city}`
+        alt: `Basic Cremation in ${rotherhamLocation.city}`
       }
     ]
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: rotherhamLocation.metaTitle,
     description: rotherhamLocation.metaDescription,
-    images: [rotherhamLocation.cityImage || `https://basiccremation.co.uk/og-image.png`]
+    images: [`https://basiccremation.co.uk/og-image.png`]
   }
 };
 
