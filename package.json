@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.0.5",
-    "react": "19.0.1",
-    "react-dom": "19.0.1",
     "gray-matter": "^4.0.3",
+    "next": "15.5.28",
+    "react": "19.0.9",
+    "react-dom": "19.0.9",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1",
     "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1",
     "resend": "^4.0.1"
   },
   "devDependencies": {
